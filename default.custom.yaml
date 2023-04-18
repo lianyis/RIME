@@ -1,0 +1,21 @@
+# default.custom.yaml
+# save it to:
+#   ~/.config/ibus/rime  (linux)
+#   ~/Library/Rime       (macos)
+#   %APPDATA%\Rime       (windows)
+
+patch:
+  schema_list:
+    - schema: wubi_pinyin          # 五笔拼音混合輸入
+  "key_binder/bindings": # "["和"]"翻页按键绑定
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+  key_binder/bindings/@next: { when: composing, accept: KP_Enter, send: Return }
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: commit_code # 配置后，可以直接用shift上屏英文字母
+    Shift_R: commit_code

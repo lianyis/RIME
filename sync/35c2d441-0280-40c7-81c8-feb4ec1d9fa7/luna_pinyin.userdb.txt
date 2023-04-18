@@ -1,0 +1,9 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	3
+#@/user_id	35c2d441-0280-40c7-81c8-feb4ec1d9fa7
+pei zhi 	配置	c=1 d=1 t=2
+she zhi 	設置	c=1 d=1 t=3
+shu xu guan 	鼠鬚管	c=1 d=1 t=1
